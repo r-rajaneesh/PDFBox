@@ -94,7 +94,7 @@ const model = new ChatOpenAI({
     configuration: {
         baseURL: "https://openrouter.ai/api/v1",
     },
-    modelName: "z-ai/glm-4.7-flash"
+    modelName: "google/gemma-3n-e2b-it:free"
 });
 
 let vectorStore = null;
@@ -187,7 +187,7 @@ export const translatePDF = async (targetLanguage, filePath) => {
             configuration: {
                 baseURL: "https://openrouter.ai/api/v1",
             },
-            modelName: "openai/gpt-3.5-turbo",
+            modelName: "google/gemma-3n-e2b-it:free",
             temperature: 0.3
         });
 
